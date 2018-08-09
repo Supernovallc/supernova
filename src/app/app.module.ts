@@ -9,10 +9,21 @@ import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './client/home/home.component';
+import { LayoutComponent } from './client/shared/layout/layout.component';
+
+// PrimeNG
+import {MenubarModule} from 'primeng/menubar';
+import { FooterComponent } from './client/shared/footer/footer.component';
+import { BodyComponent } from './client/shared/body/body.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        HomeComponent,
+        LayoutComponent,
+        FooterComponent,
+        BodyComponent,
     ],
     imports: [
         BrowserModule,
@@ -22,7 +33,8 @@ import { AppComponent } from './app.component';
         HttpClientModule,
         InputTextModule,
         DialogModule,
-        ButtonModule
+        ButtonModule,
+        MenubarModule
     ],
     providers: [],
     bootstrap: [AppComponent]
